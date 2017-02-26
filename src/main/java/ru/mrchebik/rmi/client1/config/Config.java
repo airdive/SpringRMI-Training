@@ -1,0 +1,23 @@
+package ru.mrchebik.rmi.client1.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.remoting.rmi.RmiProxyFactoryBean;
+import ru.mrchebik.rmi.client1.service.ExampleService;
+
+/**
+ * Created by mrchebik on 26.02.17.
+ */
+@Configuration
+@ComponentScan("ru.mrchebik.rmi")
+public class Config {
+    @Bean
+    public RmiProxyFactoryBean exampleService() {
+        RmiProxyFactoryBean rmiProxyFactoryBean = new RmiProxyFactoryBean();
+        rmiProxyFactoryBean.setServiceUrl("rmi://rmi.example.ru/");
+        rmiProxyFactoryBean.setServiceInterface(ExampleService.class);
+
+        return rmiProxyFactoryBean;
+    }
+}
