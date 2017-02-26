@@ -9,7 +9,7 @@ import ru.mrchebik.client1.service.ExampleService;
  */
 @Component
 public class CustomService {
-    final ExampleService exampleService;
+    private final ExampleService exampleService;
 
     @Autowired
     public CustomService(ExampleService exampleService) {
