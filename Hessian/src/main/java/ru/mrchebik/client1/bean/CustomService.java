@@ -19,7 +19,7 @@ public class CustomService {
     public void soutInfoFromServer() {
         System.out.println(exampleService.getHelloWorld());
 
-        System.out.println(exampleService.getMessage("RMI message"));
+        System.out.println(exampleService.getMessage("Hessian message"));
 
         System.out.println(exampleService.calculate("2+2"));
     }
