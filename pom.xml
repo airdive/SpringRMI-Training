@@ -11,6 +11,7 @@
     <modules>
         <module>RMI</module>
         <module>Hessian</module>
+        <module>HTTPInvoker</module>
     </modules>
 
     <dependencies>
