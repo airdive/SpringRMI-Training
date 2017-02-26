@@ -13,13 +13,11 @@ import ru.mrchebik.rmi.client0.service.ExampleService;
 @ComponentScan("ru.mrchebik.rmi.client0")
 public class Config {
     @Bean
-    public RmiServiceExporter rmiServiceExporter(ExampleService service) {
+    public RmiServiceExporter rmiServiceExporter(ExampleService exampleService) {
         RmiServiceExporter rmiServiceExporter = new RmiServiceExporter();
-        rmiServiceExporter.setService(service);
+        rmiServiceExporter.setService(exampleService);
         rmiServiceExporter.setServiceName("ExampleService");
         rmiServiceExporter.setServiceInterface(ExampleService.class);
-        rmiServiceExporter.setRegistryHost("rmi.example.ru");
-        rmiServiceExporter.setRegistryPort(2048);
 
         return rmiServiceExporter;
     }

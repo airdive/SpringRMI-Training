@@ -10,12 +10,12 @@ import ru.mrchebik.rmi.client1.service.ExampleService;
  * Created by mrchebik on 26.02.17.
  */
 @Configuration
-@ComponentScan("ru.mrchebik.rmi")
+@ComponentScan("ru.mrchebik.rmi.client1")
 public class Config {
     @Bean
     public RmiProxyFactoryBean exampleService() {
         RmiProxyFactoryBean rmiProxyFactoryBean = new RmiProxyFactoryBean();
-        rmiProxyFactoryBean.setServiceUrl("rmi://rmi.example.ru/");
+        rmiProxyFactoryBean.setServiceUrl("rmi://localhost/ExampleService");
         rmiProxyFactoryBean.setServiceInterface(ExampleService.class);
 
         return rmiProxyFactoryBean;
