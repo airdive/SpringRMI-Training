@@ -1,0 +1,1 @@
+This repository was created for training to use **Spring RMI** (_Java-configure_).
