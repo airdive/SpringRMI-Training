@@ -1,9 +1,9 @@
-package ru.mrchebik.rmi.client1;
+package ru.mrchebik.client1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.mrchebik.rmi.client1.bean.CustomService;
-import ru.mrchebik.rmi.client1.config.Config;
+import ru.mrchebik.client1.bean.CustomService;
+import ru.mrchebik.client1.config.Config;
 
 /**
  * Created by mrchebik on 26.02.17.

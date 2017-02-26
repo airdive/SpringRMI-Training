@@ -1,7 +1,7 @@
-package ru.mrchebik.rmi.client0;
+package ru.mrchebik.client0;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.mrchebik.rmi.client0.config.Config;
+import ru.mrchebik.client0.config.Config;
 
 /**
  * Created by mrchebik on 26.02.17.

@@ -1,7 +1,7 @@
-package ru.mrchebik.rmi.client0.service.impl;
+package ru.mrchebik.client0.service.impl;
 
 import org.springframework.stereotype.Service;
-import ru.mrchebik.rmi.client0.service.ExampleService;
+import ru.mrchebik.client0.service.ExampleService;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
