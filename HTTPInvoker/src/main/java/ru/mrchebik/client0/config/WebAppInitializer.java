@@ -15,6 +15,6 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     }
 
     protected String[] getServletMappings() {
-        return new String[] { "/", "*.service" };
+        return new String[] { "*.service" };
     }
 }
